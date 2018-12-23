@@ -1,13 +1,19 @@
 import React from 'react';
+import Location from './Location.jsx';
 
-class App extends React.Comonent {
-    constructor(props) {
-        super(props);
-    }
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
 
-    render() {
-        return <div>Hello</div>
-    }
+  render() {
+    return (
+      <div>
+        <Location />
+      </div>
+    );
+  }
 }
 
 export default App;
