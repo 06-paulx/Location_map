@@ -2,16 +2,22 @@ import React from 'react';
 import Map from './Map.jsx';
 
 const Location = props => (
-  <div>
+  <div className="locationComponent">
     <h2 className="location">Location</h2>
-    <h4 className="city">{props.city}</h4>
-    <h4 className="country">{props.country}</h4>
-    <h4 className="airport">{props.airport}</h4>
-    <p className="time">{props.time}</p>
-    <p className="description">{props.description}</p>
-    <p>{props.lat}</p>
-    <p>{props.lng}</p>
+    <h4 className="city">
+      {props.city}, {props.country}
+    </h4>
+    <div className="locationColumns">
+      <div className="column">
+        <p className="description">{props.description}</p>
+      </div>
+      <div className="column">
+        <h4 className="airport">Distance from {props.airport}</h4>
+        <p className="time">{props.time} mins by car without traffic</p>
+      </div>
+    </div>
     <Map lat={props.lat} lng={props.lng} />
+    <p>Exact location provided after booking</p>
   </div>
 );
 

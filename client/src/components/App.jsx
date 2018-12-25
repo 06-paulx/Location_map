@@ -18,7 +18,6 @@ class App extends React.Component {
     };
   }
 
-  // api GET to get info for loation and map
   componentDidMount() {
     $.ajax({
       method: 'GET',
@@ -41,17 +40,15 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <Location
-          city={this.state.city}
-          country={this.state.country}
-          description={this.state.descriptoin}
-          airport={this.state.airport}
-          time={this.state.time}
-          lng={this.state.lng}
-          lat={this.state.lat}
-        />
-      </div>
+      <Location
+        city={this.state.city}
+        country={this.state.country}
+        description={this.state.descriptoin}
+        airport={this.state.airport}
+        time={this.state.time}
+        lng={this.state.lng}
+        lat={this.state.lat}
+      />
     );
   }
 }

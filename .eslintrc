@@ -1,6 +1,14 @@
 {
   "extends": ["airbnb"],
-  "plugins": ["react"],
+  "overrides": [
+    {
+      "files": ["**/*.test.js"],
+      "env": {
+        "jest": true
+      }
+    }
+  ],
+  "plugins": ["react", "jest"],
   "parser": "babel-eslint",
   "rules": {
     "prefer-template": 0,

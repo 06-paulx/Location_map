@@ -11,12 +11,14 @@
     "db": "mysql -u root < ./db/schema.sql",
     "seed": "node ./db/seed.js",
     "react-dev": "webpack -d --watch",
-    "start": "nodemon server/index.js",
-    "lint": "eslint server db client"
+    "start": "nodemon server/server.js",
+    "lint": "eslint server db client",
+    "test": "NODE_ENV=test jest"
   },
   "dependencies": {
     "babel-eslint": "^10.0.1",
     "body-parser": "^1.18.3",
+    "eslint-plugin-jest": "^22.1.2",
     "express": "^4.16.4",
     "faker": "^4.1.0",
     "jquery": "^3.3.1",
@@ -38,6 +40,8 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.11.1",
+    "jest": "^23.6.0",
+    "supertest": "^3.3.0",
     "webpack": "^4.28.1",
     "webpack-cli": "^3.1.2"
   }
