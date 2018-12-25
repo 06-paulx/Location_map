@@ -1,0 +1,103 @@
+.locationApp {
+  margin: 0 auto;
+}
+
+.locationComponent {
+  color: rgb(72, 72, 72);
+  font-family: Circular, Helvetica, Arial, sans-serif;
+  margin: 16px;
+}
+
+.locationComponent .column {
+  flex: 50%;
+  margin: 0 16px;
+}
+
+.locationComponent .locationColumns {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.map {
+  height: 500px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.locationComponent .location {
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: normal;
+  color: #484848;
+  font-weight: 800;
+  margin: 16px 0 0 16px;
+}
+
+@media (min-width: 744px) {
+  .locationApp {
+    max-width: 696px;
+    padding: 0 24px;
+  }
+  .locationComponent .location {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .locationComponent .locationColumns {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1128px) {
+  .locationApp {
+    max-width: 1080px;
+  }
+}
+
+.locationComponent .city {
+  word-wrap: break-word;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.375em;
+  color: #767676;
+  margin: 16px 0 32px 16px;
+}
+
+.locationComponent .description {
+  word-wrap: break-word;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75em;
+  color: #484848;
+  padding-right: 10px;
+  margin: 0 0 56px 0;
+}
+
+.locationComponent .airport {
+  word-wrap: break-word;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.75em;
+  color: #484848;
+}
+
+.locationComponent .time {
+  word-wrap: break-word;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75em;
+  color: #484848;
+}
+
+p,
+h4 {
+  margin: 0;
+}
