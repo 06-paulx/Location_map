@@ -1,0 +1,58 @@
+.map {
+  height: 500px;
+  width: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 15px;
+  padding: 0;
+  color: rgb(72, 72, 72);
+  font-family: Circular, Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+.location {
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: normal;
+  color: #484848;
+  font-weight: 800;
+}
+
+.city {
+  margin: 0px;
+  word-wrap: break-word;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.375em;
+  color: #767676;
+}
+
+.description {
+  margin: 0px;
+  word-wrap: break-word;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75em;
+  color: #484848;
+}
+
+.airport {
+  margin: 0px;
+  word-wrap: break-word;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.75em;
+  color: #484848;
+}
+
+.time {
+  margin: 0px;
+  word-wrap: break-word;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75em;
+  color: #484848;
+}

@@ -1,9 +1,12 @@
 {
-    "extends": [
-        "airbnb"
-    ],
-    "plugins": [
-        "react"
-    ],
-    "parser": "babel-eslint"
+  "extends": ["airbnb"],
+  "plugins": ["react"],
+  "parser": "babel-eslint",
+  "rules": {
+    "prefer-template": 0,
+    "react/destructuring-assignment": 0,
+    "arrow-parens": 0,
+    "object-shorthand": 0,
+    "no-plusplus": 0
+  }
 }
