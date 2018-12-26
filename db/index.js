@@ -27,6 +27,5 @@ const getListing = (listingId, callback) => {
 };
 
 module.exports = {
-  // getCoordinates,
   getListing,
 };

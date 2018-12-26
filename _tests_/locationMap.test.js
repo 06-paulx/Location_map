@@ -8,8 +8,6 @@ import Map from '../client/src/components/Map.jsx';
 
 Enzyme.configure({ adapter: new Adapter() });
 
-// import App from '../client/src/components/App.jsx';
-
 const request = require('supertest');
 const app = require('../server');
 const connection = require('../db/connection.js');
@@ -69,5 +67,3 @@ describe('Google initMap is called', () => {
     });
   });
 });
-
-// added afterAll to end db connection
