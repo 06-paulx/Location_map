@@ -11,7 +11,6 @@ app.use(express.static(path.join(__dirname, '../public/dist')));
 
 app.get('/api/location/:listingId', (req, res) => {
   db.getListing(req.params.listingId, (err, result) => {
-    console.log(result[0], 'RESULT CITY');
     if (err) {
       res.status(500).json(err);
     } else {

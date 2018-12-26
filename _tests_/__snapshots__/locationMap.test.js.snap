@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Map component rendering should render a map of the location 1`] = `
+<div
+  className="map"
+  id="map"
+/>
+`;

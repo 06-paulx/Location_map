@@ -1,32 +1,37 @@
-/* global window,google */
+/* global window */
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Map = props => {
   window.initMap = () => {
-    const map = new google.maps.Map(document.getElementById('map'), {
-      center: { lat: props.lat, lng: props.lng },
-      zoom: 16,
-      scrollwheel: false,
-    });
+    const map = new window.google.maps.Map(
+      window.document.getElementById('map'),
+      {
+        center: { lat: props.lat, lng: props.lng },
+        zoom: 16,
+        scrollwheel: false,
+      },
+    );
 
-    const marker = new google.maps.Marker({
+    const marker = new window.google.maps.Marker({
       position: { lat: props.lat, lng: props.lng },
       map: map,
       icon: '/css/map_icon.png',
     });
   };
 
-  // const marker = google.maps.Marker({
-  //   position: { lat: props.lat, lng: props.lng },
-  //   map: map,
-  //   icon: '/map_icon.png',
-  // });
-
-  // if (window.map && window.map.setCenter) {
-  //   window.map.setCenter({ lat: props.lat, lng: props.lng });
-  // }
   return <div className="map" id="map" />;
 };
 // <div className="map" id="map" />,
+
+Map.defaultProps = {
+  lat: 0,
+  lng: 0,
+};
+
+Map.propTypes = {
+  lat: PropTypes.number,
+  lng: PropTypes.number,
+};
 
 export default Map;
