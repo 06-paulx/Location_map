@@ -4,6 +4,10 @@
   "description": "",
   "author": "",
   "license": "",
+  "jest": {
+    "setupTestFrameworkScriptFile": "jest-enzyme",
+    "testEnvironment": "enzyme"
+  },
   "engines": {
     "node": ">=6.13.0"
   },
@@ -13,7 +17,7 @@
     "react-dev": "webpack -d --watch",
     "start": "nodemon server/server.js",
     "lint": "eslint server db client",
-    "test": "NODE_ENV=test jest"
+    "test": "jest"
   },
   "dependencies": {
     "babel-eslint": "^10.0.1",
@@ -33,7 +37,11 @@
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.4",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
     "eslint": "^5.10.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
@@ -41,6 +49,7 @@
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.11.1",
     "jest": "^23.6.0",
+    "jest-enzyme": "^7.0.1",
     "supertest": "^3.3.0",
     "webpack": "^4.28.1",
     "webpack-cli": "^3.1.2"

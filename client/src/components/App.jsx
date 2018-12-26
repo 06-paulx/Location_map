@@ -23,7 +23,6 @@ class App extends React.Component {
       method: 'GET',
       url: '/api/location/' + this.props.id,
       success: listing => {
-        console.log(listing, 'LISTING AJAX');
         this.setState({
           city: listing.city,
           country: listing.country,
@@ -33,7 +32,6 @@ class App extends React.Component {
           lng: listing.longitude,
           lat: listing.latitude,
         });
-        console.log(this.state, 'STATE');
       },
     });
   }
