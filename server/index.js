@@ -23,6 +23,8 @@ app.get('/achou01/listing/:listingId', (req, res) => {
   res.sendFile(path.join(__dirname, '../public/dist/index.html'));
 });
 
+//removed below for testing
+
 // app.listen(port, () => {
 //   console.log('Listening to port ', port);
 // });
