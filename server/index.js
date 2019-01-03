@@ -7,9 +7,9 @@ const app = express();
 
 app.use(bodyParser.json());
 
-app.use(express.static(path.join(__dirname, '../public/dist')));
+app.use('/achou01', express.static(path.join(__dirname, '../public/dist')));
 
-app.get('/api/location/:listingId', (req, res) => {
+app.get('/achou01/api/location/:listingId', (req, res) => {
   db.getListing(req.params.listingId, (err, result) => {
     if (err) {
       res.status(500).json(err);
@@ -19,9 +19,11 @@ app.get('/api/location/:listingId', (req, res) => {
   });
 });
 
-app.get('/listing/:listingId', (req, res) => {
+app.get('/achou01/listing/:listingId', (req, res) => {
   res.sendFile(path.join(__dirname, '../public/dist/index.html'));
 });
+
+//removed below for testing
 
 // app.listen(port, () => {
 //   console.log('Listening to port ', port);
