@@ -1,25 +1,25 @@
-.locationApp {
+.locationAppAC {
   margin: 0 auto;
 }
 
-.locationComponent {
+.locationComponentAC {
   color: rgb(72, 72, 72);
   font-family: Circular, Helvetica, Arial, sans-serif;
   margin: 16px;
 }
 
-.locationComponent .column {
+.locationComponentAC .columnAC {
   flex: 50%;
   margin: 0 16px;
 }
 
-.locationComponent .locationColumns {
+.locationComponentAC .locationColumnsAC {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-.map {
+.mapAC {
   height: 500px;
   width: 100%;
   margin-bottom: 8px;
@@ -33,7 +33,7 @@ body {
   padding: 0;
 }
 
-.locationComponent .location {
+.locationComponentAC .locationAC {
   font-size: 24px;
   line-height: 30px;
   letter-spacing: normal;
@@ -43,26 +43,26 @@ body {
 }
 
 @media (min-width: 744px) {
-  .locationApp {
+  .locationAppAC {
     max-width: 696px;
     padding: 0 24px;
   }
-  .locationComponent .location {
+  .locationComponentAC .locationAC {
     font-size: 36px;
     line-height: 40px;
   }
-  .locationComponent .locationColumns {
+  .locationComponentAC .locationColumnsAC {
     flex-direction: row;
   }
 }
 
 @media (min-width: 1128px) {
-  .locationApp {
+  .locationAppAC {
     max-width: 1080px;
   }
 }
 
-.locationComponent .city {
+.locationComponentAC .cityAC {
   word-wrap: break-word;
   font-size: 16px;
   font-weight: 600;
@@ -71,7 +71,7 @@ body {
   margin: 16px 0 32px 16px;
 }
 
-.locationComponent .description {
+.locationComponentAC .descriptionAC {
   word-wrap: break-word;
   font-size: 16px;
   font-weight: 400;
@@ -81,7 +81,7 @@ body {
   margin: 0 0 56px 0;
 }
 
-.locationComponent .airport {
+.locationComponentAC .airportAC {
   word-wrap: break-word;
   font-size: 16px;
   font-weight: 800;
@@ -89,7 +89,7 @@ body {
   color: #484848;
 }
 
-.locationComponent .time {
+.locationComponentAC .timeAC {
   word-wrap: break-word;
   font-size: 16px;
   font-weight: 400;

@@ -21,7 +21,7 @@ class App extends React.Component {
   componentDidMount() {
     $.ajax({
       method: 'GET',
-      url: '/achou01/api/location/' + this.props.id,
+      url: 'http://localhost:3007/' + this.props.id + '/location',
       success: listing => {
         this.setState({
           city: listing.city,

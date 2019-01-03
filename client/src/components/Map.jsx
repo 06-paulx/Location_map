@@ -16,11 +16,11 @@ const Map = props => {
     const marker = new window.google.maps.Marker({
       position: { lat: props.lat, lng: props.lng },
       map: map,
-      icon: '/achou01/css/map_icon.png',
+      icon: '/css/map_icon.png',
     });
   };
 
-  return <div className="map" id="map" />;
+  return <div className="mapAC" id="map" />;
 };
 // <div className="map" id="map" />,
 
