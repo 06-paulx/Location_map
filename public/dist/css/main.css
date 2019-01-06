@@ -43,6 +43,12 @@ body {
 }
 
 @media (min-width: 744px) {
+  .locationComponentAC {
+    padding-right: 24px;
+    padding-left: 24px;
+    max-width: 696px;
+    margin: auto;
+  }
   .locationAppAC {
     max-width: 696px;
     padding: 0 24px;
@@ -58,6 +64,9 @@ body {
 
 @media (min-width: 1128px) {
   .locationAppAC {
+    max-width: 1080px;
+  }
+  .locationComponentAC {
     max-width: 1080px;
   }
 }

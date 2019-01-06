@@ -16,7 +16,7 @@ const Map = props => {
     const marker = new window.google.maps.Marker({
       position: { lat: props.lat, lng: props.lng },
       map: map,
-      icon: '/css/map_icon.png',
+      icon: 'http://3.16.114.148/css/map_icon.png',
     });
   };
 

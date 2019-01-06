@@ -15,7 +15,7 @@
     "db": "mysql -u root < ./db/schema.sql",
     "seed": "node ./db/seed.js",
     "react-dev": "webpack -d --watch",
-    "start": "nodemon server/server.js",
+    "start": "node ./db/seed.js & node server/server.js",
     "lint": "eslint server db client",
     "test": "jest"
   },
