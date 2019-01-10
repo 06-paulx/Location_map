@@ -4,10 +4,14 @@
 
 ## Related Projects
 
-- https://github.com/teamName/repo
-- https://github.com/teamName/repo
-- https://github.com/teamName/repo
-- https://github.com/teamName/repo
+- https://github.com/06-paulx/calendar
+- https://github.com/06-paulx/Other_highly_rated_homes
+- https://github.com/06-paulx/Header
+- https://github.com/06-paulx/Amenities
+- https://github.com/06-paulx/Reviews
+- https://github.com/06-paulx/tour_of_listing
+- https://github.com/06-paulx/Description_of_home
+- https://github.com/06-paulx/Location_map_proxy
 
 ## Table of Contents
 
@@ -18,40 +22,12 @@
 ## Usage
 
 > Some usage instructions
+ - npm run db to create database
+ - npm run seed to seed the database
+ - npm run watch
 
 ## notes
 
-# Database
-
-- builds an image using Dockerfile
-
-  - docker image build -t imageName . => . = path to dockerfile; lower case for image name
-
-- build a container using that image
-
-  - docker run -d imageName -> running a container; -d = detach
-
-- executes what's in the container
-  - docker exec -it containerName bash -> run a command on an already running container
-
-# Component
-
-- builds an image using Dockerfile
-
-  - docker image build -t imageName . => . = path to dockerfile; lower case for image name
-
-- build a container using image with port (port 3007 exposed)
-  - docker run -d -p 6666:3007 --name containerName imageName
-
-#
-
-# remove image - docker rmi imageName
-
-# remove container - docker rm containerName
-
-# inspect bridge - docker network inspect bridge (172.17.02)
-
-# sudo yum install -y git create -- install git
 
 ## Requirements
 
@@ -67,6 +43,5 @@ An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 From within the root directory:
 
 ```sh
-npm install -g webpack
 npm install
 ```

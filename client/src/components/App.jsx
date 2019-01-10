@@ -1,3 +1,5 @@
+/* global window */
+
 import React from 'react';
 import $ from 'jquery';
 import PropTypes from 'prop-types';
@@ -22,6 +24,7 @@ class App extends React.Component {
     $.ajax({
       method: 'GET',
       url: 'http://3.16.114.148/' + this.props.id + '/location',
+      // url: '/' + this.props.id + '/location',
       success: listing => {
         this.setState({
           city: listing.city,
@@ -32,6 +35,14 @@ class App extends React.Component {
           lng: listing.longitude,
           lat: listing.latitude,
         });
+        const apiScript = window.document.createElement('script');
+        apiScript.setAttribute(
+          'src',
+          `https://maps.googleapis.com/maps/api/js?key=${
+            window.apiKey
+          }&callback=initMap`,
+        );
+        window.document.body.appendChild(apiScript);
       },
     });
   }

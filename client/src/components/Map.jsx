@@ -17,6 +17,7 @@ const Map = props => {
       position: { lat: props.lat, lng: props.lng },
       map: map,
       icon: 'http://3.16.114.148/css/map_icon.png',
+      // icon: '/css/map_icon.png',
     });
   };
 
