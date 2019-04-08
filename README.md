@@ -2,6 +2,8 @@
 
 > Project description
 
+- Implemented Google Maps API and modal component in React full stack app. Dockerized and deployed application and API proxy server to AWS EC2. Wrote unit tests using Jest and Enzyme for the React component.
+
 ## Related Projects
 
 - https://github.com/06-paulx/calendar
@@ -22,19 +24,14 @@
 ## Usage
 
 > Some usage instructions
- - npm run db to create database
- - npm run seed to seed the database
- - npm run watch
+
+- npm run db to create database
+- npm run seed to seed the database
+- npm run watch
 
 ## notes
 
-
 ## Requirements
-
-An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
-
-- Node 6.13.0
-- etc
 
 ## Development
 
